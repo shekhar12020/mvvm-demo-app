@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:maxLength="6"
-            android:onClick="@{() -> loginViewModel.doLoginRequest(userDetails)}"
+            android:onClick="@{()->loginViewModel.doLoginRequest(userDetails)}"
             android:text="Login" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>

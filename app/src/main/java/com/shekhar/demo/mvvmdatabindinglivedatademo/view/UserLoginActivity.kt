@@ -1,14 +1,11 @@
 package com.shekhar.demo.mvvmdatabindinglivedatademo.view
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.os.PersistableBundle
-import android.widget.Toast
 import androidx.databinding.library.baseAdapters.BR
 import androidx.lifecycle.ViewModelProviders
 import com.shekhar.demo.mvvmdatabindinglivedatademo.R
 import com.shekhar.demo.mvvmdatabindinglivedatademo.base.BaseActivity
 import com.shekhar.demo.mvvmdatabindinglivedatademo.databinding.ActivityUserLoginBinding
+import com.shekhar.demo.mvvmdatabindinglivedatademo.model.UserLoginDetails
 import com.shekhar.demo.mvvmdatabindinglivedatademo.viewmodel.UserLoginViewModel
 
 class UserLoginActivity : BaseActivity<ActivityUserLoginBinding, UserLoginViewModel>() {
@@ -18,6 +15,7 @@ class UserLoginActivity : BaseActivity<ActivityUserLoginBinding, UserLoginViewMo
     }
 
     override fun init() {
+        mViewDataBinding?.userDetails = UserLoginDetails()
     }
 
     override fun getViewModel(): UserLoginViewModel {

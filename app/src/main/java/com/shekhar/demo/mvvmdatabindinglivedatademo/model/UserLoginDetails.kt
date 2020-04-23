@@ -2,6 +2,7 @@ package com.shekhar.demo.mvvmdatabindinglivedatademo.model
 
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
+import androidx.databinding.library.baseAdapters.BR
 
 class UserLoginDetails : BaseObservable() {
 
@@ -18,5 +19,4 @@ class UserLoginDetails : BaseObservable() {
             field = userPass
             notifyPropertyChanged(BR.userPass)
         }
-
 }
