@@ -24,18 +24,15 @@
             android:id="@+id/mobileNumberEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
             android:layout_marginTop="16dp"
-            android:inputType="phone"
-            android:maxLength="10"
-            android:text="@={userDetails.userPhone}" />
+            android:text="@={userDetails.userEmail}" />
 
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:inputType="numberPassword"
-            android:maxLength="6"
             android:text="@={userDetails.userPass}" />
 
         <Button

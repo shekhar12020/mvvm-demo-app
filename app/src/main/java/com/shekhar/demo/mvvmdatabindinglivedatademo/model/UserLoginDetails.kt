@@ -6,11 +6,11 @@ import androidx.databinding.library.baseAdapters.BR
 
 class UserLoginDetails : BaseObservable() {
 
-    var userPhone: String? = null
+    var userEmail: String? = null
         @Bindable get() = field
-        set(userPhone) {
-            field = userPhone
-            notifyPropertyChanged(BR.userPhone)
+        set(userEmail) {
+            field = userEmail
+            notifyPropertyChanged(BR.userEmail)
         }
 
     var userPass: String? = null
